@@ -1,0 +1,2 @@
+It is a custom exception class that you created to handle a specific error case:
+When the user tries to withdraw more money than the account balance.
