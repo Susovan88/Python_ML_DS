@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask + Jinja2</title>
+</head>
+<body>
+    <h1>Welcome our about page </h1>
+    <h1>User List</h1>
+    <ul>
+        {% for name in names %}
+        <li>{{ name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

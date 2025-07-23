@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .result-box {
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .result-box h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .total {
+            font-size: 22px;
+            margin: 10px 0;
+            color: #555;
+        }
+        .status {
+            font-size: 26px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+        }
+        .pass {
+            background-color: #4CAF50;
+        }
+        .fail {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h1>Result</h1>
+        <div class="total">Total Marks: {{ exp.marks }}</div>
+
+        {% if exp.result == 'PASS' %}
+            <div class="status pass">PASS ✅</div>
+        {% else %}
+            <div class="status fail">FAIL ❌</div>
+        {% endif %}
+    </div>
+</body>
+</html>
