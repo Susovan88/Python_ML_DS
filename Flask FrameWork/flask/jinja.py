@@ -9,6 +9,8 @@ app=Flask(__name__)
 def welcome():
     return "Welcome Back our page...."
 
+
+
 @app.route("/profile")
 def get_profile():
     return "Welcome your profile page...."
@@ -16,6 +18,9 @@ def get_profile():
 def get_about():
     names=["susovan","taniya"," mimi","ram"]
     return render_template("about.html",names=names)
+
+
+
 
 @app.route("/form",methods=["GET","POST"])
 def form():
@@ -25,6 +30,8 @@ def form():
         password=request.form["password"]
         return f" hello {name}!!! \n Your email is {email}. also have a strong password {password}"
     return render_template("form.html")
+
+
 
 @app.route("/input_result",methods=["GET","POST"])
 def result():
@@ -40,6 +47,8 @@ def result():
     return redirect(url_for("get_score",total_mask=total_score))
     
 
+
+
 @app.route("/get_score/<int:total_mask>")
 def get_score(total_mask):
     result=""
@@ -52,6 +61,9 @@ def get_score(total_mask):
         "result":result
     }
     return render_template("showResult.html",exp=exp)
+
+
+
 
 if __name__=="__main__":
     app.run(debug=True)
