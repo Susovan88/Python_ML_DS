@@ -1,0 +1,30 @@
+Line 1: This is a sample line.
+Line 2: Another example of a line.
+Line 3: More text to fill the file.
+Line 4: This is a demo string.
+Line 5: Python is great for file handling.
+Line 6: Reading and writing files is easy.
+Line 7: Each line is numbered here.
+Line 8: You can split files by lines.
+Line 9: Or even by file size.
+Line 10: File operations are important.
+Line 11: This is line eleven.
+Line 12: We're halfway through now.
+Line 13: Almost at the midpoint.
+Line 14: This can help in testing.
+Line 15: Keep reading these lines.
+Line 16: Writing test cases becomes easy.
+Line 17: Splitting text files is fun.
+Line 18: Large files can be tricky.
+Line 19: Buffering helps performance.
+Line 20: Python makes it simple.
+Line 21: Just a few more lines.
+Line 22: Stay with us!
+Line 23: We’re almost there.
+Line 24: Line numbers help debug.
+Line 25: This is line twenty-five.
+Line 26: Getting close to the end.
+Line 27: File testing is useful.
+Line 28: Don’t forget to close files.
+Line 29: Use with-open to manage context.
+Line 30: Done! This is the last line.
